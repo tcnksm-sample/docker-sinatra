@@ -8,5 +8,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "precise64"
   config.vm.provision :docker do |d|
     d.pull_images "ubuntu"
-  end  
+  end
+  
+  config.vm.network :private_network, ip: "192.168.50.4"
 end
