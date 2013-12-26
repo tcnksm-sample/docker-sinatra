@@ -3,7 +3,7 @@ require 'sinatra/base'
 
 class App < Sinatra::Base
   get '/' do
-    'Hello docker'
+    'Hello from docker!'
   end
 end
 

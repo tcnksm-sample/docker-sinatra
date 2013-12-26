@@ -2,12 +2,26 @@
 
 This is sample project for running a sinatra application on Docker.
 
-## Vagrant
+# Usage on OS X
 
-- forwarded port
-- `vagrant ssh-config --host docker-sinatra >> ~/.ssh/config`
+Use VM
 
-## ToDo
+```
+vagrant up
+vagrant ssh
+```
 
-- delete eval rbenv init -
-- need to prepare server, nginx
+Create Image
+
+```
+docker build -t tcnksm/sinatra-sample .
+```
+
+Run it !
+
+```
+ID=$(docker run -d tcnksm/sinatra-sample)
+```
+
+
+
