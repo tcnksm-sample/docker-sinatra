@@ -2,9 +2,9 @@
 
 This is sample project for running a sinatra application on Docker.
 
-# Usage on OS X
+## Usage
 
-Use VM
+Use Vagrant. In `Vagrantfile`, just add port forwarding settings.
 
 ```
 vagrant up
@@ -14,14 +14,21 @@ vagrant ssh
 Create Image
 
 ```
-docker build -t tcnksm/sinatra-sample .
+docker build -t sinatra .
 ```
 
 Run it !
 
 ```
-ID=$(docker run -d tcnksm/sinatra-sample)
+ID=$(docker run -p 4567:4567 -d sinatra)
 ```
+
+Check logs
+
+```
+docker logs $ID
+```
+
 
 
 
