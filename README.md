@@ -4,13 +4,6 @@ This is sample project for running a sinatra application on Docker.
 
 ## Usage
 
-Use Vagrant. In `Vagrantfile`, just add port forwarding settings.
-
-```
-vagrant up
-vagrant ssh
-```
-
 Create Image
 
 ```
@@ -29,6 +22,23 @@ Check logs
 docker logs $ID
 ```
 
+## OS X
 
+Use Vagrant. In `Vagrantfile`, just add port forwarding settings.
+
+```
+vagrant up
+```
+
+and
+
+```
+vagrant ssh
+```
+
+## Reference
+
+- [OSX, Vagrant, Docker, and Sinatra | DYLI.SH](http://dyli.sh/2013/08/23/OSX-Vagrant-Docker-Sinatra.html)
+- [Sinatra deployment with Docker](http://haanto.com/sinatra-deployment-with-docker/)
 
 
