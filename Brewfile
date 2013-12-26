@@ -1,7 +1,7 @@
-# homebrew-caskのインストール
+# Install homebrew-cask
 tap phinze/homebrew-cask
 install brew-cask
 
-# インストール
+# Install virtualbox and vagrant
 cask install virtualbox
 cask install vagrant
